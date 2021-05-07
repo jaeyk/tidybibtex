@@ -14,11 +14,5 @@ install_github("jaeyk/tidybibtex", dependencies = TRUE)
 
 ## Usage 
 
-```r
-
-library(tidybibtex)
-
-
-
-```
+See the vignette section of the package homepage.
 

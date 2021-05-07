@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(tidybibtex)
 ```
 
-# Load a BibTeX file 
+## Load a BibTeX file 
 
 The package contains a sample BibTeX file called `sample_bib.` Note that this object is a character vector.
 
@@ -26,7 +26,7 @@ The package contains a sample BibTeX file called `sample_bib.` Note that this ob
 sample_bib[1:10]
 ```
 
-# Capitalize a selected field 
+## Capitalize a selected field 
 
 In case, you want to capitalize the title field. 
 
@@ -35,7 +35,7 @@ capitalize_field(vec = sample_bib[1:10],
                  field = "title")
 ```
 
-In case, you want to capitalize the title field with an exception of "in" and "the."
+In case you want to capitalize the title field except "in" and "the."
 
 ```{r}
 capitalize_field(vec = sample_bib[1:10], 
@@ -43,7 +43,7 @@ capitalize_field(vec = sample_bib[1:10],
                  exceptions = c("in", "the"))
 ```
 
-# Load and capitalize by one function
+## Load and capitalize by one function
 
 You can simply the above steps using the `cap_bib_field()` function.
 
@@ -54,4 +54,10 @@ cap_bib_field(file_path = <Insert the file path>,
               exceptions = c("in", "the"))
 ```
 
+## If you want to export the modified BibTeX file 
+
+```{r eval = FALSE}
+# writeLines is a base R function.
+writeLines(<file name>, <file path>)
+```
 
