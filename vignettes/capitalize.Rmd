@@ -17,3 +17,41 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(tidybibtex)
 ```
+
+# Load a BibTeX file 
+
+The package contains a sample BibTeX file called `sample_bib.` Note that this object is a character vector.
+
+```{r}
+sample_bib[1:10]
+```
+
+# Capitalize a selected field 
+
+In case, you want to capitalize the title field. 
+
+```{r}
+capitalize_field(vec = sample_bib[1:10], 
+                 field = "title")
+```
+
+In case, you want to capitalize the title field with an exception of "in" and "the."
+
+```{r}
+capitalize_field(vec = sample_bib[1:10], 
+                 field = "title",
+                 exceptions = c("in", "the"))
+```
+
+# Load and capitalize by one function
+
+You can simply the above steps using the `cap_bib_field()` function.
+
+```{r eval = FALSE}
+cap_bib_field(file_path = <Insert the file path>,
+              vec = sample_bib[1:10], 
+              field = "title",
+              exceptions = c("in", "the"))
+```
+
+
