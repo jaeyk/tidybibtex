@@ -1,0 +1,25 @@
+Package: tidybibtex
+Title: An R package for tidying Bibtex files.  
+Version: 0.0.1
+Authors@R: 
+    person(given = "Jae Yeon",
+           family = "Kim",
+           role = c("aut", "cre"),
+           email = "jaeyeonkim2Berkeley.edu",
+           comment = c(ORCID = "0000-0002-6533-7910"))
+Description: This package provides functions for tidying Bibtex files.
+Maintainer: Jae Yeon Kim <jaeyeonkim@berkeley.edu>
+BugReports: https://github.com/jaeyk/tidybibtex
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    glue,
+    magrittr,
+    stringr
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
