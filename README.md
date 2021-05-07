@@ -16,5 +16,5 @@ install_github("jaeyk/tidybibtex", dependencies = TRUE)
 
 See the vignette section of the package homepage.
 
-* [Capitalize a selected filed in a BibTeX file](https://jaeyk.github.io/tidybibtex/articles/capitalize.html)
+* [Capitalize a selected field in a BibTeX file](https://jaeyk.github.io/tidybibtex/articles/capitalize.html)
 
