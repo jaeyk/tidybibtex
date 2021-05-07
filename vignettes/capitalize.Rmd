@@ -28,7 +28,7 @@ sample_bib[1:10]
 
 ## Capitalize a selected field 
 
-In case, you want to capitalize the title field. 
+In case you want to capitalize the title field. 
 
 ```{r}
 capitalize_field(vec = sample_bib[1:10], 
@@ -60,4 +60,3 @@ cap_bib_field(file_path = <Insert the file path>,
 # writeLines is a base R function.
 writeLines(<file name>, <file path>)
 ```
-
