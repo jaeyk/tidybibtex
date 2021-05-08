@@ -97,7 +97,7 @@
 <div id="load-a-bibtex-file" class="section level2">
 <h2 class="hasAnchor">
 <a href="#load-a-bibtex-file" class="anchor"></a>Load a BibTeX file</h2>
-<p>The package contains a sample BibTeX file called <code>sample_bib.</code> Note that this object is a character vector.</p>
+<p>The package contains a sample BibTeX file called <code>sample_bib.</code> Note that this object is a character vector. If you want to import your own BibTeX file, please use the <code><a href="https://rdrr.io/r/base/readLines.html">readLines()</a></code> function. It’s a base R function, so you don’t need to install any new library.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">sample_bib</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span>
 <span class="co">#&gt;  [1] "@article{nolan2010computing,"                      </span>
@@ -157,7 +157,7 @@
 <h2 class="hasAnchor">
 <a href="#if-you-want-to-export-the-modified-bibtex-file" class="anchor"></a>If you want to export the modified BibTeX file</h2>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># writeLines is a base R function.</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">writeLines</span>(<span class="sc">&lt;</span>file name<span class="sc">&gt;</span>, <span class="sc">&lt;</span>file path<span class="sc">&gt;</span>)</span></code></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">writeLines</span>(<span class="sc">&lt;</span>object name<span class="sc">&gt;</span>, <span class="sc">&lt;</span>file path<span class="sc">&gt;</span>)</span></code></pre></div>
 </div>
   </div>
 

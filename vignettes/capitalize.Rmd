@@ -20,7 +20,7 @@ library(tidybibtex)
 
 ## Load a BibTeX file 
 
-The package contains a sample BibTeX file called `sample_bib.` Note that this object is a character vector.
+The package contains a sample BibTeX file called `sample_bib.` Note that this object is a character vector. If you want to import your own BibTeX file, please use the `readLines()` function. It's a base R function, so you don't need to install any new library.
 
 ```{r}
 sample_bib[1:10]
@@ -58,5 +58,5 @@ cap_bib_field(file_path = <Insert the file path>,
 
 ```{r eval = FALSE}
 # writeLines is a base R function.
-writeLines(<file name>, <file path>)
+writeLines(<object name>, <file path>)
 ```
